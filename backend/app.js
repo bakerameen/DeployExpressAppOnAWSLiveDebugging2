@@ -1,6 +1,9 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 const app = express();
+
+app.use(bodyParser.json());
 
 const dbPath = "mongodb+srv://baqer:iggy5R1y8urUhxts@cluster0-2wlh3.mongodb.net/Naseej-letter-competetion?retryWrites=true&w=majority";
 mongoose
