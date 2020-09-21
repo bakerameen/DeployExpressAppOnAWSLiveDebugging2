@@ -17,7 +17,7 @@ mongoose
 
   
 app.get('/', (req, res) => {
-    res.send('hello AWS 2021');
+    res.send('hello AWS 2022');
     })
 
     module.exports = app;
