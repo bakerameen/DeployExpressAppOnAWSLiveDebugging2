@@ -115,8 +115,8 @@ app.get('/', (req, res) => {
 
 
     
-    app.use("/api/posts", teamRoutes);
-app.use("/api/users", userRoutes);
-app.use("/api/teamOrganized", organizedRoutes);
+//     app.use("/api/posts", teamRoutes);
+// app.use("/api/users", userRoutes);
+// app.use("/api/teamOrganized", organizedRoutes);
     
     module.exports = app;
