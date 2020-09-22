@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
+
+const teamRoutes = require("./routes/teams");
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -23,4 +26,6 @@ app.get('/', (req, res) => {
     res.send('hello AWS 2022');
     })
 
+    app.use("/api/posts", teamRoutes);
+    
     module.exports = app;
