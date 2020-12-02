@@ -1,6 +1,6 @@
 const app = require("./backend/app");
+const port = 3000;
 
 
-app.listen(8080, () => {
-    console.log('server started?')
-})
+app.listen(process.env.PORT || port, () => console.log("example app listining"));
+
